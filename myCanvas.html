@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <link rel="stylesheet" href="colours.css">
+ 
+
+ <title>Drawing Board App</title>
+ <style>
+  body {
+   margin: 3px;
+   padding: 6px;
+   font-size: 22px;
+  }
+  canvas {
+   border: 2px solid black;
+   background-color: white;
+  }
+  .toolbar button,
+  #clearButton,
+  #saveButton {
+   padding: 15px;
+   font-size: 24px;
+background-color: #80cba7;
+  }
+#pencilTool{
+   margin-bottom: 6px;
+   font-size: 24px;
+  }
+ </style>
+</head>
+<body style="background-color:#beebd5;">
+ 
+ 
+ 
+ <h1> Deseneaza aici: </h1>
+ 
+ <div class="toolbar">
+ <button id="pencilTool">Pencil</button>
+ <button id="brushTool">Brush</button>
+ <button id="eraserTool">Eraser</button>
+ <input type="color" id="colorPicker" />
+ <select id="brushSize">
+  <option value="1">1px</option>
+  <option value="3">3px</option>
+  <option value="5">5px</option>
+  <option value="7">7px</option>
+  <option value="9">9px</option>
+  <option value="11">11px</option>
+ </select>
+</div>
+<div class="color-palette">
+ <div class="color-swatch" style="background-color: black"></div>
+ <div class="color-swatch" style="background-color: #880808"></div>
+ <div class="color-swatch" style="background-color: #FAFA33"></div>
+ <div class="color-swatch" style="background-color: #228B22"></div>
+ <div class="color-swatch" style="background-color: cyan"></div>
+</div>
+
+ <canvas id="myCanvas" width="1400" height="650"></canvas>
+ <button id="clearButton">Clear</button>
+ <button id="saveButton">Save</button>
+
+ <script src="actions.js"> </script>
+
+
+</body>
+
+</html>
+
